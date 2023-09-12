@@ -1,6 +1,6 @@
 import '../styles/MovieInfo.css';
 import MoviePage from './MoviePage'
-import Sidebar from './sidebar'
+import Sidebar from '../components/Sidebar'
 
 
 const MovieInfo = () => {
