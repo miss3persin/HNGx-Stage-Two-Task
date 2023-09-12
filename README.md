@@ -1,8 +1,65 @@
-# React + Vite
+```markdown
+# Movie Discovery Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
 
-Currently, two official plugins are available:
+- [About](#about)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API](#api)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About
+
+The Movie Discovery Web Application is a web-based platform for discovering information about movies. It allows users to search for movies, view their release dates and the runtime of movies.
+
+## Features
+
+- Search for movies by title.
+- View detailed information about a specific movie.
+- Responsive design for both desktop and mobile devices.
+
+## Demo
+
+[Link to Demo](https://hn-gx-stage-two-task.vercel.app/)
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/miss3persin/HNGx-Stage-Two-Task.git
+```
+
+2. Install dependencies:
+
+```bash
+cd HNGx-Stage-Two-Task
+npm install
+```
+
+## Usage
+
+1. Start the application:
+
+```bash
+npm start
+```
+
+2. Open your web browser and go to `http://localhost:5173`.
+
+## API
+
+This application uses the [TMDB API](https://www.themoviedb.org/documentation/api) for fetching movie data.
+
+## Contributing
+
+If you'd like to contribute, please fork the repository and create a new branch. Pull requests are welcome!
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+```
