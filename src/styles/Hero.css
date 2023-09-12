@@ -117,6 +117,7 @@
 
 .title-container {
     text-align: left;
+    min-width: 300px;
 }
 
 .meta-data {
@@ -327,7 +328,7 @@ nav {
   }
 
   .carousel-slide-content {
-    transform: translate(-50%, -67%);
+    transform: translate(-50%, -70%);
     width: 100%;
     padding-left: 10px;
   }
