@@ -300,14 +300,21 @@ nav {
 
   .carousel-slide-content {
     transform: translate(-50%, -65%);
+    width: 100%;
   }
   
   .carousel-slide-content h2 {
     font-size: 30px;
+    max-width: 300px;
   }
   
   .carousel-slide-content p {
     font-size: 16px;
+    padding: 0 30px 0 0;
+  }
+
+  .overview {
+    min-width: 100px;
   }
 }
 
