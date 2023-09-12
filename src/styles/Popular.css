@@ -28,9 +28,6 @@
     }
 }
 
-/* md */
-@media (max-width: 768px) {}
-
 /* sm */
 @media (max-width: 640px) {
     .heading {
@@ -39,4 +36,10 @@
 }
 
 /* xs */
-@media (max-width: 475px) {}
+@media (max-width: 475px) {
+    .heading {
+        margin-left: 0;
+        text-align: center;
+        font-size: 28px;
+    }
+}
