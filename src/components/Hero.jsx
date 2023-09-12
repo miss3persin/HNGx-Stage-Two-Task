@@ -60,7 +60,7 @@ const Hero = ({topMovies}) => {
           <Slider {...settings}>
             {topMovies.map((movie) => (
               <div key={movie.id} className='carousel-slide'>
-                <Link to={`/movies/${movie.id}`} target='_blank'>
+                <Link to={`/movies/${movie.id}`}>
                   <div className='carousel-slide-content'>
 
                     <div className='title-container'>

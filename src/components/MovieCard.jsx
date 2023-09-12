@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -111,7 +112,7 @@ const MovieCard = () => {
               </svg>
             </div>
 
-            <Link to={`/movies/${movie.id}`} target="_blank">
+            <Link to={`/movies/${movie.id}`}>
               <div className="poster" data-testid="movie-poster">
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
