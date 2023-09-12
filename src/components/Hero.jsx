@@ -67,9 +67,11 @@ const Hero = ({topMovies}) => {
                       <h2>{movie.title}</h2>
                     </div>
                 <div className='meta-data'>
+                  <div className='overview-div'>
                     <p className='overview'>
                       {movie.overview}
                     </p>
+                    </div>
 
                     <p> <span className='extra-style'>Release date: </span><br />
                       {movie.release_date}

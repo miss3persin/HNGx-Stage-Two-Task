@@ -97,12 +97,25 @@
 /* xl */
 @media (max-width: 1280px) {
     .sidebar{
-        gap: 7px;
+        gap: 5px;
     }
 
     .links-container p {
         font-size: 16px;
         padding: 15px 0 15px 20px;
+    }
+
+    .logo{
+        width: 120px;
+        margin-top: 20px;
+    }
+
+    .logout-container img {
+        width: 25px;
+    }
+    
+    .logout-container p {
+        font-size: 14px;
     }
 }
 
@@ -170,15 +183,15 @@
 @media (max-width: 640px) {
     .sidebar{
         padding: 10px 0 10px 0;
-        gap: 30px;
+        gap: 23px;
     }
 
     .logo{
-        width: 90px;
+        width: 120px;
     }
     
     .links-container p {
-        font-size: 10px;
+        font-size: 13px;
         padding: 15px 0 15px 30px;
     }
 
@@ -208,10 +221,10 @@
     }
     
     .logout-container p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .logout-container img {
-        width: 20px;
+        width: 21px;
     }
 }

@@ -37,6 +37,7 @@ const MoviePage = () => {
   if (!movieDetails) {
     return <div className="checker2">Loading...</div>;
   }
+  
 
   return (
     <div className="main-page">
@@ -60,7 +61,7 @@ const MoviePage = () => {
       </div>
 
       <div className="overview-container">
-        <span className="styling">Overview:</span> <br />
+        <span className="styling">Overview:</span> <br /><br />
         <span data-testid="movie-overview">{movieDetails.overview}</span>
       </div>
       </div>

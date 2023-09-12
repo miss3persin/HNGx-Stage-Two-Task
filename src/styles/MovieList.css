@@ -16,6 +16,7 @@
     justify-content: space-between;
     background-color: transparent;
     height: 70px;
+    margin-bottom: 25px;
 }
 
 .sign-in2 {
@@ -55,7 +56,9 @@
   .logo-1 {
     display: flex;
   }
+
 }
+
 
 
 
