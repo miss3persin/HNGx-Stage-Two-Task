@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  background-color: transparent;
+  transition: background-color 1s;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* border-radius: 3px; */
+
+}
+
+:hover::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+background-color: black;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
