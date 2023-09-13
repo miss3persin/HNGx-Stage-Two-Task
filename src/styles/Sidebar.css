@@ -319,9 +319,9 @@
 }
 
 /* xs */
-@media (max-width: 420px) {
+@media (max-width: 490px) {
 .backup {
-    flex: 1.5;
+    flex: 0;
     margin-left: 90px;
 }
 

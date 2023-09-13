@@ -137,7 +137,6 @@ const MoviePage = () => {
                 // eslint-disable-next-line react/no-unknown-property
                 frameborder="0"
                 allowfullscreen
-                style={{ borderRadius: "30px" }}
               ></iframe>
             )}
           </div>

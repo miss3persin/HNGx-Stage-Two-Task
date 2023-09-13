@@ -4,9 +4,25 @@
         font-size: 36px;
         color: black;
         font-weight: 800;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 70px;
+        margin: 50px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .see-more {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-size: 21px;
+        font-weight: 500;
+        color: rgba(184, 0, 0, 0.781);
+        cursor: pointer;
+    }
+
+    .see-more img {
+        width: 24px;
     }
     
     .padder {
@@ -24,7 +40,12 @@
 /* lg */
 @media (max-width: 1024px) {
     .heading {
-        margin-left: 30px;
+        display: block;
+    }
+
+    .popular {
+        text-align: center;
+        margin-bottom: 10px;
     }
 }
 
@@ -37,9 +58,16 @@
 
 /* xs */
 @media (max-width: 475px) {
-    .heading {
-        margin-left: 0;
-        text-align: center;
-        font-size: 28px;
+    .popular {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+
+    .see-more {
+        font-size: 18px;
+    }
+
+    .see-more img{
+        width: 20px;
     }
 }

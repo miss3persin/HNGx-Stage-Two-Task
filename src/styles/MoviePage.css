@@ -26,6 +26,9 @@
         display: flex;
         flex: 1;
     }
+    iframe {
+        border-radius: 30px;
+    }
     
     .container {
         display: flex;
@@ -523,6 +526,11 @@
         line-height: 17px;
     }
 
+    iframe {
+        height: 280px;
+        border-radius: 20px;
+    }
+
     .main-info {
         display: block;
     }
@@ -604,10 +612,10 @@
 }
 
 /* xs */
-@media (max-width: 420px) {
+@media (max-width: 490px) {
 
 .main-page {
-    width: 100%;
+    width: 90%;
 }
 
 .trailer {

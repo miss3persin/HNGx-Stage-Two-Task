@@ -32,7 +32,7 @@
   .text-content {
     width: 250px;
     height: 50px;
-    margin-bottom: 500px;
+    margin-bottom: 525px;
   }
 
   .title-wrapper h2{
@@ -75,7 +75,10 @@
 
   .genres {
     margin-top: 10px;
+    margin-bottom: 50px;
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .genres span{
