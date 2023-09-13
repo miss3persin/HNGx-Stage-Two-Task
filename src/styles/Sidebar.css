@@ -321,7 +321,39 @@
 /* xs */
 @media (max-width: 420px) {
 .backup {
-    flex: 1;
+    flex: 1.5;
+    margin-left: 90px;
 }
+
+.sidebar{
+    padding: 10px 0 10px 0;
+    gap: 20px;
+    width: 90px;
+}
+
+.logo {
+    width: 80px;
+}
+
+
+.links-container p {
+    font-size: 9px;
+    padding: 15px 10px 15px 12px;
+    margin: 5px 0px;
+}
+
+.event-container h4 {
+    font-size: 8px;
+}
+
+.event-container p {
+    font-size: 6px;
+}
+
+.logout-container {
+margin-top: -2px;}
+
+.logout-container p{
+font-size: 10px;}
 
 }

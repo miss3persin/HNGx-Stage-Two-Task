@@ -603,6 +603,70 @@
     }
 }
 
+/* xs */
+@media (max-width: 420px) {
+
+.main-page {
+    width: 100%;
+}
+
+.trailer {
+    padding-left: 10px;
+    padding-right: 30px;
+    /* padding-bottom: 180px; */
+}
+
+iframe {
+    height: 180px;
+    border-radius: 5px;
+}
+
+.data-container {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.other-details {
+    /* padding-left: 0px; */
+    /* padding-right: 50px; */
+    width: 100%;
+    padding: 25px 0 0 0 ;
+}
+
+.buttons {
+    padding-right: 10px;
+}
+
+.best-movies {
+    padding-right: 10px;
+}
+
+.stars {
+    padding-right: 10px;
+}
+
+.stars ul{
+    padding-left: 4px;
+}
+
+.directors {
+    padding-right: 10px;
+}
+
+.directors ul{
+    padding-left: 4px;
+}
+
+.overview-container {
+    width: 90%;
+}
+
+.writers ul{
+    padding-left: 4px;
+}
+
+}
+
 /* md */
 @media (max-width: 768px) {
 
