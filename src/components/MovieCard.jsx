@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import IMDB from "../assets/IMBD.png"
 import "../styles/MovieCard.css";
 
 const API_KEY = "36cdee315ca2ee3231ca252814317c61";
@@ -9,7 +10,8 @@ const API_KEY = "36cdee315ca2ee3231ca252814317c61";
 const MovieCard = () => {
   const [popularMovie, setPopularMovie] = useState(null);
   const [notFound, setNotFound] = useState(false);
-  const [clickedStates, setClickedStates] = useState(Array(3).fill(false)); // Assuming you have 3 divs
+  const [clickedStates, setClickedStates] = useState(Array(3).fill(false));
+  const [genres, setGenres] = useState([]);
 
   const handleClick = (id) => {
     const newClickedStates = [...clickedStates];
@@ -25,6 +27,9 @@ const MovieCard = () => {
         // );
         const response = await axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`);
         setPopularMovie(response.data.results.slice(0, 10));
+
+        const genreResponse = await axios.get(`https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`);
+        setGenres(genreResponse.data.genres);
 
       } catch (error) {
         if (error.response && error.response.status === 404) {
@@ -123,18 +128,38 @@ const MovieCard = () => {
               </div>
 
               <div className="text-content">
-                <div className="title-wrapper">
-                  <h2 data-testid="movie-title">{movie.title}</h2>
-                </div>
 
+                  <div className="title-date">
                 <div className="release-date-container">
                   <p>
-                    Release Date: <br />
                     <span data-testid="movie-release-date">
                       {movie.release_date}
                     </span>
                   </p>
                 </div>
+
+                <div className="title-wrapper">
+                  <h2 data-testid="movie-title">{movie.title}</h2>
+                </div>
+
+                </div>
+
+                <div className="ratings">
+                  <div className="img"><img src={IMDB} alt="IMDB ratings" /></div>
+                  {movie.vote_average.toFixed(1)*10}.0 / 100
+                </div>
+
+
+
+                <div className="genres">
+                {movie.genre_ids.map((genreId, index) => {
+                const genre = genres.find((genre) => genre.id === genreId);
+                return genre ? (
+                  <span key={genre.id}>{genre.name}{index !== movie.genre_ids.length - 1 ? "," : ""}</span>
+                ) : null;
+              })}
+                </div>
+
               </div>
               
           </div>
