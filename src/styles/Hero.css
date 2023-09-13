@@ -2,6 +2,10 @@
   position: relative;
 }
 
+hr {
+  display: none;
+}
+
 .correction-container {
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,17 +275,21 @@ nav {
 @media (max-width: 475px) {
   nav {
     gap: 30px;
-    padding: 10px 0;
+    padding: 10px 0 10px 60px;
     justify-content: center;
+    margin-top: 40px;
   }
+
   .logo-1 {
     position: absolute;
     width: 100%;
     margin: 0;
     z-index: 999;
     right: 33.3%;
-    top: 80px;
+    top: 19px;
   }
+
+  
 
   .sign-in {
     gap: 10px;
@@ -320,6 +328,14 @@ nav {
 
 /* xs */
 @media (max-width: 370px) {
+  nav {
+    gap: 30px;
+    padding: 10px 0 10px 60px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: -50px;
+  }
+
   .sign-in {
     gap: 12px;
     margin-right: -35px;

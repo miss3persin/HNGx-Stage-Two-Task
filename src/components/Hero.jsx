@@ -45,6 +45,7 @@ const Hero = ({topMovies}) => {
             <img src={logo} alt='logo' className='logo-1' />
           </Link>
 
+            <hr style={{ backgroundColor: 'white' }}/>
           <div className='search-container'>
             <Search />
           </div>

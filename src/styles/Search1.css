@@ -86,3 +86,16 @@
       }
 }
 
+  /* xs */
+  @media (max-width: 475px) {
+    .searchbar1 {
+        width: 100%;
+        height: 30px;
+    }
+
+    .search-container {
+        margin-left: -73px;
+    }
+
+  }
+

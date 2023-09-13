@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import logo from "../assets/Logo.png";
 import Search1 from "../components/Search1";
@@ -13,7 +14,7 @@ const MovieList = ({ movies }) => {
         <Link to={`/`} className="custom-link">
           <img src={logo} alt="logo" className="logo-1" />
         </Link>
-
+          <hr />
         <div className="search-container">
           <Search1 />
         </div>
