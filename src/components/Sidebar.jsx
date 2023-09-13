@@ -9,6 +9,8 @@ import '../styles/Sidebar.css'
 
 const sidebar = () => {
   return (
+    <>
+    <div className='backup'></div>
     <div className='sidebar'>
     <div className='logo-container'>
     <Link to={`/`} className="custom-link">
@@ -35,6 +37,7 @@ const sidebar = () => {
     </div>
     
 </div>
+</>
   )
 }
 

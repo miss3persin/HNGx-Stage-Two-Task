@@ -3,6 +3,7 @@
   .poster {
     height: 20px;
     width: 100%;
+    position: relative;
     justify-content: center;
 }
 
@@ -42,6 +43,7 @@
     margin-left: 60px;
     margin-top: 10px;
     cursor: pointer;
+    z-index: 999;
   }
 
 

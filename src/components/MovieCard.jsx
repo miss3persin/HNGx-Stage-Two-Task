@@ -25,6 +25,7 @@ const MovieCard = () => {
         // );
         const response = await axios.get(`https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`);
         setPopularMovie(response.data.results.slice(0, 10));
+
       } catch (error) {
         if (error.response && error.response.status === 404) {
           setNotFound(true);
@@ -112,12 +113,13 @@ const MovieCard = () => {
               </svg>
             </div>
 
-            <Link to={`/movies/${movie.id}`}>
               <div className="poster" data-testid="movie-poster">
+            <Link to={`/movies/${movie.id}`}>
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                   alt={movie.title}
                 />
+              </Link>
               </div>
 
               <div className="text-content">
@@ -134,7 +136,7 @@ const MovieCard = () => {
                   </p>
                 </div>
               </div>
-            </Link>
+              
           </div>
         ))}
       </div>
