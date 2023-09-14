@@ -119,9 +119,10 @@ const MovieCard = () => {
               </svg>
             </div>
 
-              <div className="poster" data-testid="movie-poster">
+              <div className="poster">
             <Link to={`/movies/${movie.id}`}>
                 <img
+                  data-testid="movie-poster"
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                   alt={movie.title}
                 />

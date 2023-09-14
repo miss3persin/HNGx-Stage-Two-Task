@@ -148,9 +148,9 @@ const MoviePage = () => {
                 </div>
 
                 <div className="release-date">
-                  <span data-testid="movie-release-date">
+                  <span>
                     <ul>
-                      <li>{movieDetails.release_date}</li>
+                      <li data-testid="movie-release-date">{movieDetails.release_date}</li>
                     </ul>
                   </span>
                 </div>
