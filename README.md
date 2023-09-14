@@ -1,5 +1,5 @@
 ```markdown
-# Movie Discovery Web Application
+# MovieBox Web Application
 
 ## Table of Contents
 
@@ -62,5 +62,5 @@ If you'd like to contribute, please fork the repository and create a new branch.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is currently not under any license.
 ```
