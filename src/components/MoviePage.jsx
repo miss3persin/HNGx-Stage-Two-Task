@@ -85,44 +85,6 @@ const MoviePage = () => {
 
   return (
     <div className="main-page">
-      {/* <div className="container">
-      <div className="movie-details">
-
-        <div className="movie-title">
-         Title: <span data-testid="movie-title">{movieDetails.title}</span>
-        </div>
-
-      <div className="release-date">
-        Release Date (UTC):{" "}
-        <span data-testid="movie-release-date">
-          {movieDetails.release_date}
-        </span>
-      </div>
-
-      <div className="runtime-container">
-        Runtime: <span data-testid="movie-runtime">{movieDetails.runtime}</span>{" "}
-        minutes
-      </div>
-
-      <div className="overview-container">
-        <span className="styling">Overview:</span> <br /><br />
-        <span data-testid="movie-overview">{movieDetails.overview}</span>
-      </div>
-      </div>
-
-      <div className="image-container">
-          {posterPath ? (
-            <img
-              src={`https://image.tmdb.org/t/p/w500${posterPath}`}
-              alt={movieDetails.title}
-            />
-          ) : <img
-          src={placeholder}
-          alt="no image available"
-          className="no-image"
-        />}
-        </div>
-        </div> */}
 
       <div className="container">
         <div className="inner-container">

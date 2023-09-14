@@ -5,6 +5,7 @@ import calendar from '../assets/Calendar.png'
 import show from '../assets/TV Show.png'
 import projector from '../assets/Movie Projector.png'
 import logout from '../assets/Logout.png'
+import tv from "../assets/tv.svg"
 import '../styles/Sidebar.css'
 
 const sidebar = () => {
@@ -15,14 +16,15 @@ const sidebar = () => {
     <div className='logo-container'>
     <Link to={`/`} className="custom-link">
         <img src={logo} alt="" className='logo'/>
+        <img src={tv} alt="" className='logo-alt'/>
       </Link>
     </div>
 
     <div className='links-container'>
-            <p><img src={home} alt="Home" /> Home</p>
-            <p className='active'><img src={projector} alt="Movies" /> Movies</p>
-            <p><img src={show} alt="TV Series" /> TV Series</p>
-            <p><img src={calendar} alt="Upcoming" /> Upcoming</p>
+            <p><img src={home} alt="Home" /> <span>Home</span></p>
+            <p className='active'><img src={projector} alt="Movies" /> <span>Movies</span></p>
+            <p><img src={show} alt="TV Series" /><span>TV Series</span></p>
+            <p><img src={calendar} alt="Upcoming" /> <span>Upcoming</span></p>
     </div>
 
     <div className='event-container'>

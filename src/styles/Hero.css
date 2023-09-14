@@ -6,6 +6,14 @@ hr {
   display: none;
 }
 
+.sign-in p{
+  cursor: pointer;
+}
+
+.sign-in img{
+  cursor: pointer;
+}
+
 .correction-container {
     background-repeat: no-repeat;
     background-size: cover;

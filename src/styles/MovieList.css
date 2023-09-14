@@ -33,6 +33,14 @@
     color: black;
 }
 
+.sign-in2 p{
+  cursor: pointer;
+}
+
+.sign-in2 img{
+  cursor: pointer;
+}
+
 
 /* lg */
 @media (max-width: 1024px) {
