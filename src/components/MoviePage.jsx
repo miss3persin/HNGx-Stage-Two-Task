@@ -5,7 +5,6 @@ import axios from "axios";
 import star from "../assets/Star.png"
 import tickets from "../assets/Two Tickets.png"
 import lists from "../assets/List.png"
-import best_movies from "../assets/Group 52.png"
 
 const API_KEY = "36cdee315ca2ee3231ca252814317c61";
 
@@ -241,7 +240,13 @@ const MoviePage = () => {
               </div>
               </div>
 
-              <div className="best-movies"><img src={best_movies} alt="best movies" /></div>
+              <div className="best-movies">
+                {/* <img src={best_movies} alt="best movies" /> */}
+                <img
+                  src={`https://image.tmdb.org/t/p/w500${movieDetails.poster_path}`}
+                  alt={movieDetails.title}
+                />
+              </div>
 
             </div>
 

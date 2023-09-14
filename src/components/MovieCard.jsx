@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import IMDB from "../assets/IMBD.png"
+import tomatoes from "../assets/tomatoes.png"
 import "../styles/MovieCard.css";
 
 const API_KEY = "36cdee315ca2ee3231ca252814317c61";
@@ -145,8 +146,16 @@ const MovieCard = () => {
                 </div>
 
                 <div className="ratings">
+                  <div className="imdb-rating">
                   <div className="img"><img src={IMDB} alt="IMDB ratings" /></div>
                   {movie.vote_average.toFixed(1)*10}.0 / 100
+                  </div>
+
+                  <div className='tomatoes-rating'>
+                  <div className="img"><img src={tomatoes} alt="rotten tomatoes ratings" /></div>
+                  {movie.vote_average.toFixed(1)*10}%
+                  </div>
+
                 </div>
 
 

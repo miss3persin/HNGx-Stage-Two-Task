@@ -61,6 +61,7 @@
   .ratings {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 10px;
     font-size: 14px;
     font-weight: 500;
@@ -74,7 +75,7 @@
   }
 
   .genres {
-    margin-top: 10px;
+    margin-top: 14px;
     margin-bottom: 50px;
     height: 100%;
     display: flex;

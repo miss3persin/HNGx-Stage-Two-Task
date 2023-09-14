@@ -16,6 +16,14 @@
     margin-bottom: 30px;
 }
 
+.socials img {
+    cursor: pointer;
+}
+
+.useless-info p {
+    cursor: pointer;
+}
+
 .useless-info {
     width: 100%;
     display: flex;

@@ -237,18 +237,19 @@
 
     .best-movies {
         width: 100%;
-        height: 230px;
-        object-fit: contain;
+        height: 100%;
+        object-fit: cover;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
+        /* align-items: center; */
+        justify-content: right;
         padding-bottom: 50px;
     }
 
     .best-movies img {
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
+        cursor: pointer;
     }
 }
 
@@ -336,9 +337,6 @@
     }
 
 
-    .best-movies {
-        height: 160px;
-    }
 }
 
 
@@ -433,11 +431,6 @@
     .watch-options img {
         width: 15px;
     }
-
-
-    .best-movies {
-        height: 160px;
-    }
 }
 
 @media (max-width: 798px) {
@@ -455,7 +448,7 @@
     }
     
     .release-date {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
     }
 
@@ -464,7 +457,7 @@
     }
     
     .runtime-container {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
     }
 
@@ -508,8 +501,16 @@
     }
 
     .best-movies {
-        width: auto;
-        height: 300px;
+        width: 70%;
+        height: 50%;
+        justify-content: left;
+        padding-bottom: 50px;
+    }
+
+    .best-movies img {
+        width: 50%;
+        height: 50%;
+        border-radius: 10px;
     }
 
 }
@@ -519,10 +520,21 @@
 
 /* sm */
 @media (max-width: 640px) {
+
+    .main-page {
+        /* background-color: red; */
+        height: 100%;
+        /* flex: 0.5; */
+        padding-right: -90px;
+        /* padding-left: 73px; */
+        width: 70%;
+    }
+
     .movie-title {
-        font-size: 16px;
-        font-weight: 900;
-        margin-top: 14px;
+        font-size: 15px;
+        font-weight: 800;
+        margin-top: 0px;
+        margin-bottom: 50px;
         line-height: 17px;
     }
 
@@ -530,14 +542,10 @@
         height: 280px;
         border-radius: 20px;
     }
-
-    .main-info {
-        display: block;
-    }
     
     .release-date {
-        font-size: 11px;
-        font-weight: 600;
+        font-size: 9px;
+        font-weight: 500;
     }
 
     .release-date ul{
@@ -545,8 +553,8 @@
     }
     
     .runtime-container {
-        font-size: 11px;
-        font-weight: 600;
+        font-size: 9px;
+        font-weight: 500;
     }
 
     .runtime-container ul{
@@ -554,17 +562,17 @@
     }
 
     .genre {
-        font-size: 9px;
+        font-size: 7px;
         margin-bottom: 30px;
     }
 
     .genre ul {
-        gap: 10px;
+        gap: 7px;
         margin-top: 7px;
     }
 
     .genre li {
-        height: 17px;
+        height: 15px;
     }
     
     .overview-container {
@@ -595,9 +603,6 @@
         margin-bottom: 30px;
     }
 
-    .best-movies {
-        height: 200px;
-    }
 
     .checker1 {
         font-size: 28px;

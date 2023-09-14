@@ -10,6 +10,7 @@ import menu from "../assets/Menu.png";
 import placeholder from "../assets/No-Image-Placeholder.svg.png";
 import "../styles/MovieList.css";
 import IMDB from "../assets/IMBD.png";
+import tomatoes from "../assets/tomatoes.png"
 
 const API_KEY = "36cdee315ca2ee3231ca252814317c61";
 
@@ -161,10 +162,16 @@ const MovieList = ({ movies }) => {
                 </div>
 
                 <div className="ratings">
-                  <div className="img">
-                    <img src={IMDB} alt="IMDB ratings" />
+                  <div className="imdb-rating">
+                  <div className="img"><img src={IMDB} alt="IMDB ratings" /></div>
+                  {movie.vote_average.toFixed(1)*10}.0 / 100
                   </div>
-                  {movie.vote_average.toFixed(1) * 10}.0 / 100
+
+                  <div className='tomatoes-rating'>
+                  <div className="img"><img src={tomatoes} alt="rotten tomatoes ratings" /></div>
+                  {movie.vote_average.toFixed(1)*10}%
+                  </div>
+
                 </div>
 
                 <div className="genres">
