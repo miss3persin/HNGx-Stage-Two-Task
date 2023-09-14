@@ -1,5 +1,5 @@
 ```markdown
-# Movie Discovery Web Application
+# MovieBox Web Application
 
 ## Table of Contents
 
@@ -14,12 +14,13 @@
 
 ## About
 
-The Movie Discovery Web Application is a web-based platform for discovering information about movies. It allows users to search for movies, view their release dates and the runtime of movies.
+The MovieBox Web Application is a website for discovering information about movies. It allows users to search for movies, view details, and watch trailers.
 
 ## Features
 
 - Search for movies by title.
 - View detailed information about a specific movie.
+- Watch trailers of movies.
 - Responsive design for both desktop and mobile devices.
 
 ## Demo
@@ -46,7 +47,7 @@ npm install
 1. Start the application:
 
 ```bash
-npm start
+npm run dev
 ```
 
 2. Open your web browser and go to `http://localhost:5173`.
@@ -61,5 +62,5 @@ If you'd like to contribute, please fork the repository and create a new branch.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is currently not under any license.
 ```
