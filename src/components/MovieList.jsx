@@ -38,7 +38,7 @@ const MovieList = ({ movies }) => {
 
   return (
     <div>
-      <nav>
+      <nav className="navbar">
         <Link to={`/`} className="custom-link">
           <img src={logo} alt="logo" className="logo-1" />
         </Link>

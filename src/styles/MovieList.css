@@ -73,6 +73,13 @@ nav {
   margin-top: 50px;
 }
 
+.navbar {
+  gap: 30px;
+  padding: 10px 0 10px 60px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 hr {
   position: absolute;
   top: 50px;
@@ -95,17 +102,16 @@ hr {
   top: 19px;
 }
 
-.sign-in {
+.sign-in2 {
   gap: 10px;
-  /* width: 100%; */
   margin-right: 0px;
 }
 
-.sign-in p {
+.sign-in2 p {
   font-size: 11px;
 }
 
-.sign-in img {
+.sign-in2 img {
   width: 20px;
   height: 20px;
 }
@@ -113,18 +119,18 @@ hr {
 }
 
 
-/* xs */
+
 @media (max-width: 370px) {
-  .sign-in {
+  .sign-in2 {
     gap: 12px;
     margin-right: -35px;
   }
 
-  .sign-in p {
+  .sign-in2 p {
     font-size: 9px;
   }
 
-  .sign-in img {
+  .sign-in2 img {
     width: 18px;
     height: 18px;
   }
