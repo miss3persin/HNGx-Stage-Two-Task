@@ -8,6 +8,9 @@ import menu from '../assets/Menu.png';
 import '../styles/Hero.css';
 import Search from '../components/Search';
 import { Link } from 'react-router-dom';
+import IMDB from "../assets/IMBD.png"
+import play from "../assets/Play.png"
+import tomatoes from "../assets/tomatoes.png"
 
 const Hero = ({topMovies}) => {
   const [currentBackdrop, setCurrentBackdrop] = useState(null);
@@ -20,7 +23,7 @@ const Hero = ({topMovies}) => {
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 3000,
-    cssEase: 'linear',
+    cssEase: 'ease',
     arrows: true,
     responsive: [
       {
@@ -64,19 +67,35 @@ const Hero = ({topMovies}) => {
                 <Link to={`/movies/${movie.id}`}>
                   <div className='carousel-slide-content'>
 
-                    <div className='title-container'>
+                    
+                <div className='meta-data'>
+                  
+                <div className='title-container'>
                       <h2>{movie.title}</h2>
                     </div>
-                <div className='meta-data'>
+
+                <div className="ratingss">
+
+                  <div className='imdb-rating'>
+                  <div className="img"><img src={IMDB} alt="IMDB ratings" /></div>
+                  {movie.vote_average.toFixed(1)*10}.0 / 100
+                  </div>
+
+                  <div className='tomatoes-rating'>
+                  <div className="img"><img src={tomatoes} alt="rotten tomatoes ratings" /></div>
+                  {movie.vote_average.toFixed(1)*10}%
+                  </div>
+
+                </div>
+
                   <div className='overview-div'>
                     <p className='overview'>
                       {movie.overview}
                     </p>
                     </div>
 
-                    <p> <span className='extra-style'>Release date: </span><br />
-                      {movie.release_date}
-                    </p>
+                <div className="watch-trailer-btn"><button className="watch-trailer"><div><img src={play} alt="play" /></div>WATCH TRAILER</button></div>
+
                   </div>
                   </div>
                 </Link>
